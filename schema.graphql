@@ -1,0 +1,37 @@
+type Ballot {
+    id: ID!
+    title: String!
+    description: String!
+    votes: [Vote]!
+}
+
+type Mutation {
+    vote(input: VoteInput!): VoteResponse
+}
+
+type VoteResponse {
+    id: ID!
+}
+
+type Query {
+    ballots: [Ballot]!
+    ballot(id: ID!): Ballot
+}
+
+type Vote {
+    id: ID!
+    value: VoteValue!
+    createdBy: String!
+}
+
+input VoteInput {
+    value: VoteValue!
+    createdBy: String!
+    ballotId: ID!
+}
+
+enum VoteValue {
+    YAY
+    NAY
+    ABSTAIN
+}

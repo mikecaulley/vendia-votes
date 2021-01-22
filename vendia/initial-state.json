@@ -1,0 +1,12 @@
+{
+  "Ballot": [
+    {
+      "title": "First Ballot",
+      "description": "The first ballot for testing."
+    },
+    {
+      "title": "Second Ballot",
+      "description": "Second test ballot."
+    }
+  ]
+}

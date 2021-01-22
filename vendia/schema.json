@@ -1,0 +1,53 @@
+{
+  "title": "Ballots",
+  "description": "Ballots and voting data.",
+  "type": "object",
+  "properties": {
+    "Ballot": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "description": "The title of the ballot issue.",
+            "type": "string"
+          },
+          "description": {
+            "description": "A description of the ballot issue.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "description"
+        ]
+      }
+    },
+    "Vote": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ballotId": {
+            "type": "string",
+            "description": "ID of the ballot associated with this vote."
+          },
+          "value": {
+            "description": "The vote value.",
+            "type": "string",
+            "enum": ["YAY", "NAY", "ABSTAIN"]
+          },
+          "createdBy": {
+            "description": "The voter's name.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "ballotId",
+          "value",
+          "createdBy"
+        ]
+      }
+    }
+  }
+}

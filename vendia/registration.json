@@ -1,0 +1,12 @@
+{
+  "name": "test-ballots",
+  "schema": "schema.json",
+  "nodes": [
+    {
+      "name": "FirstBranch",
+      "userId": "mike.caulley@slalom.com",
+      "region": "us-east-2"
+    }
+  ],
+  "initState": "./initial-state.json"
+}

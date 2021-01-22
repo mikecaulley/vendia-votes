@@ -1,0 +1,15 @@
+{
+  "name": "vote-mutation-resolver",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "graphql": "^15.4.0",
+    "graphql-tag": "^2.11.0"
+  },
+  "scripts": {
+    "build": "zip ./VoteMutationResolver.zip . ./../node_modules -r",
+    "clean": "rm ./*.zip"
+  }
+}

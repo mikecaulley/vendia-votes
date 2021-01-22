@@ -1,0 +1,9 @@
+{
+  "name": "lambdas",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["BallotQueryResolver", "BallotsQueryResolver", "BallotVotesResolver", "VoteMutationResolver"],
+  "scripts": {
+    "build": "yarn workspaces run clean && yarn workspaces run build"
+  }
+}
